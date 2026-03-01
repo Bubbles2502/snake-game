@@ -1,4 +1,4 @@
-#Classic Snake Game
+## Classic Snake Game
 
 A retro, Nokia-style Snake game built entirely from scratch using HTML5 Canvas, CSS, and vanilla JavaScript. 
 
