@@ -56,7 +56,7 @@ function startGameLoop() {
 
         changingDirection = false; 
         clearCanvas();
-        drawFood();    // <--- This is the line that crashed!
+        drawFood();
         moveSnake();
         drawSnake();
         drawScore(); 
@@ -153,14 +153,12 @@ function generateFood() {
     });
 }
 
-// --- NEW: The missing function is back! ---
 function drawFood() {
     ctx.fillStyle = "red"; 
     ctx.strokeStyle = "darkred";
     ctx.fillRect(foodX, foodY, gridSize, gridSize);
     ctx.strokeRect(foodX, foodY, gridSize, gridSize);
 }
-// ------------------------------------------
 
 function hasGameEnded() {
     if (!snakeMoving) return false;
